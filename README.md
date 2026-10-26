@@ -6,7 +6,12 @@ Proyek ini dibuat untuk tugas mata kuliah **Pengolahan Citra Video**.
 
 ## Video Demo
 
-**[Tonton Video Demo](assets/Video_Demo.mp4)** (`assets/Video_Demo.mp4`)
+<p align="center">
+  <a href="assets/Video_Demo.mp4">
+    <img src="assets/Video_Demo.gif" alt="Video demo game Kuda Gurun dikontrol sarung tangan ungu" width="640">
+  </a>
+</p>
+<p align="center"><sub>Pratinjau berputar otomatis. Klik gambar untuk membuka video lengkap (<code>assets/Video_Demo.mp4</code>).</sub></p>
 
 ## Penjelasan Game
 
