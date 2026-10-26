@@ -11,6 +11,7 @@ Proyek ini dibuat untuk tugas mata kuliah **Pengolahan Citra Video**.
     <img src="assets/Video_Demo.gif" alt="Video demo game Kuda Gurun dikontrol sarung tangan ungu" width="640">
   </a>
 </p>
+<p align="center"><sub>i ). Video Demo Game.</sub></p>
 
 ## Penjelasan Game
 
@@ -28,6 +29,7 @@ Kamu bermain sebagai seekor **kuda yang berlari di padang pasir**. Pandangan gam
     <img src="assets/Demo_Pause.png" alt="Video demo game Kuda Gurun dikontrol sarung tangan ungu" width="640">
   </a>
 </p>
+<p align="center"><sub>ii ). Game DiPause Saat Tidak Mendeteksi Tangan Dengan Sarung Tangan Ungu</sub></p>
 
 ### Aturan permainan
 
@@ -233,11 +235,14 @@ Semua ada di bagian konfigurasi di awal file `.py`.
 ├── game.py
 ├── README.md
 └── assets/
-    ├── Video_Demo.mp4
     ├── horse/
     │   └── north.png
     └── cactus/
-        └── pixel_cactus.png
+    │   └── pixel_cactus.png
+    ├── Demo_Pause.png
+    ├── Video_Demo.gif
+    ├── Video_Demo.mp4
+
 ```
 
 ##
