@@ -42,11 +42,11 @@ Kamu bermain sebagai seekor **kuda yang berlari di padang pasir**. Pandangan gam
 
 ---
 
-## ✅ Pemenuhan Ketentuan Tugas
+## Pemenuhan Ketentuan Tugas
 
 | Ketentuan | Implementasi |
 |---|---|
-| Tidak boleh memakai MediaPipe | Hanya memakai **OpenCV** dan **NumPy**. |
+| Tidak boleh memakai MediaPipe |
 | Wajib menggunakan HSV | Deteksi tangan dilakukan di ruang warna **HSV** dengan `cv2.cvtColor` dan `cv2.inRange`. |
 | Fokus pada pengolahan warna tangan sebagai input game | Posisi horizontal sarung tangan ungu menjadi input yang menggerakkan kuda. |
 | Ada skor | Skor = jarak tempuh (meter). |
@@ -98,7 +98,7 @@ Frame kamera (BGR)
 
 ---
 
-## 🧪 Filter dan Teknik yang Digunakan
+## Filter dan Teknik yang Digunakan
 
 ### 1. Pra-pemrosesan
 
@@ -150,7 +150,7 @@ Tombol `K` mengambil sampel piksel dari kotak kuning di tengah kamera, menghitun
 
 ---
 
-## 🚀 Instalasi dan Cara Menjalankan
+## Instalasi dan Cara Menjalankan
 
 ### Kebutuhan
 
@@ -166,10 +166,10 @@ Tombol `K` mengambil sampel piksel dari kotak kuning di tengah kamera, menghitun
 pip install opencv-python numpy
 
 # 2. Jalankan game (dari folder yang berisi file .py dan folder assets)
-python kuda_gurun.py
+python game.py
 ```
 
-> Sesuaikan `kuda_gurun.py` dengan nama file game di repositori ini.
+> Sesuaikan `game.py` dengan nama file game di repositori ini.
 
 **Jika memakai Spyder:** di IPython Console ketik `%pip install opencv-python numpy`, restart kernel, buka file `.py`, lalu tekan **F5**.
 
@@ -178,20 +178,6 @@ Saat dijalankan akan muncul tiga jendela:
 1. **Game**: layar permainan.
 2. **Kamera + Deteksi Tangan**: tampilan kamera lengkap dengan kotak deteksi dan mask hitam-putih di pojok kanan bawah.
 3. **HSV**: slider untuk mengatur rentang warna.
-
----
-
-## 🎨 Kalibrasi Warna
-
-Lakukan sekali, atau ulangi jika pencahayaan berubah.
-
-1. Pakai sarung tangan ungu, lalu taruh telapaknya sampai menutupi **kotak kuning** di jendela kamera.
-2. Klik jendela **Game**, lalu tekan **`K`** untuk auto-kalibrasi.
-3. Periksa mask di pojok kanan bawah jendela kamera. Sarung tangan harus tampil sebagai bentuk putih yang utuh.
-4. Kalau ada benda ungu lain yang ikut terdeteksi, persempit slider **H low** dan **H high**. Kalau mask bolong, turunkan **S low** atau **V low** sedikit.
-5. Tekan **`S`** untuk menyimpan ke `hsv_config_ungu.json`. File ini dibaca otomatis pada saat game dijalankan berikutnya.
-
-**Tips:** hadap ke sumber cahaya, pakai lengan baju yang tidak berwarna ungu, dan gunakan latar yang tidak berwarna ungu.
 
 ---
 
@@ -254,7 +240,8 @@ Semua ada di bagian konfigurasi di awal file `.py`.
         └── pixel_cactus.png
 ```
 
-## 👤 Pembuat
+##
+Pembuat
 
 - **Nama:** Dhafin Ardra Madany
 - **NRP:** 5024241054
